@@ -97,7 +97,9 @@
         color: red;
         text-decoration: none;
     }
-
+    .content form > .btn {
+        float: right;
+    }
 
 /****************
 * Footer
