@@ -40,14 +40,14 @@
         display: inline-block;
         color: #000;
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         font-size: 23px;
         line-height: 28px;
     }
     .hero > .clock {
         display: inline-block;
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .hero > form {
         display: inline-block;
@@ -67,6 +67,18 @@
                 color: #fff;
             }
 
+@media (max-width: 700px) {
+    .hero {
+        width: 100%;
+        margin: 60px 0 30px;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 550px) {
+    .clock > .time {
+        width: 50%;
+    }
+}
 /****************
 * Main Content
 ****************/
@@ -110,19 +122,59 @@
         float: right;
     }
 
+@media (max-width: 1200px) {
+    .content {
+        width: 900px;
+        margin: 60px calc( (100% - 900px) / 2 );
+    }
+}
+@media (max-width: 1000px) {
+    .content {
+        width: 700px;
+        margin: 60px calc( (100% - 700px) / 2 );
+    }
+        .two-in-row {
+            width: 100%;
+        }
+        .two-in-row:last-of-type {
+            margin-left: 0;
+        }
+}
+@media (max-width: 800px) {
+    .content {
+        width: 500px;
+        margin: 60px calc( (100% - 500px) / 2 );
+    }
+        .content > .left {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        .content > .right {
+            width: 100%;
+        }
+}
+@media (max-width: 600px) {
+    .content {
+        width: 100%;
+        margin: 60px 0;
+        padding: 0 20px;
+    }
+}
+
 /****************
 * Footer
 ****************/
 .footer {
     display: inline-block;
     width: 1100px;
-    margin: 0 calc((100% - 1100px) / 2);
+    margin: 30px calc((100% - 1100px) / 2);
     text-align: center;
+    position: relative;
 }
     .footer > .btn {
-        position: relative;
+        position: absolute;
         top: -30px;
-        right: -500px;
+        right: -25px;
     }
     .footer > .socials {
         display: inline-block;
@@ -149,7 +201,7 @@
     .footer > .footer-content {
         display: inline-block;
         width: 600px;
-        margin: 10px calc((100% - 600px) / 2) 0;
+        margin: 30px calc((100% - 600px) / 2) 0;
         color: #fffa;
         font-size: 16px;
         line-height: 32px;
@@ -183,3 +235,39 @@
         display: inline-block;
         width: 100%;
     }
+
+@media (max-width: 1200px) {
+    .footer {
+        width: 900px;
+        margin: 30px calc( (100% - 900px) / 2 );
+    }
+}
+@media (max-width: 1000px) {
+    .footer {
+        width: 700px;
+        margin: 30px calc( (100% - 700px) / 2 );
+    }
+}
+@media (max-width: 800px) {
+    .footer {
+        width: 500px;
+        margin: 30px calc( (100% - 500px) / 2 );
+    }
+    .footer > .btn {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .footer > .footer-content {
+        width: 100%;
+        margin: 30px 0 0;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        width: 100%;
+        margin: 30px 0;
+        padding: 0 20px;
+    }
+} 

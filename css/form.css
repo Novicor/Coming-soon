@@ -23,9 +23,9 @@ form {
     }
     
 /* galimi 2 budai atslinkti antra elementa nuo pirmojo: */
-    .two-in-row + .two-in-row {
-        margin-left: 10%;
-    }
-    /* .two-in-row:last-of-type {
+    /* .two-in-row + .two-in-row {
         margin-left: 10%;
     } */
+    .two-in-row:last-of-type {
+        margin-left: 10%;
+    }
